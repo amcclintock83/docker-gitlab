@@ -4,7 +4,7 @@
 # Version 0.1
 
 FROM sameersbn/gitlab:8.16.6
-# FROM quay.io/sameersbn/gitlab:8.13.3
+# FROM quay.io/sameersbn/gitlab:8.16.6
 MAINTAINER Joseph Lutz <Joseph.Lutz@novatechweb.com>
 
 # copy wrapper script

@@ -3,7 +3,7 @@
 #
 # Version 0.1
 
-FROM sameersbn/gitlab:8.16.6
+FROM sameersbn/gitlab:8.17.4
 # FROM quay.io/sameersbn/gitlab:8.16.6
 MAINTAINER Joseph Lutz <Joseph.Lutz@novatechweb.com>
 

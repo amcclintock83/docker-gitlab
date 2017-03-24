@@ -52,6 +52,7 @@ case ${1} in
             --env-file=./gitlab.env.list \
             --env="DB_USER=${GITLAB_DB_USER}" \
             --env="DB_PASS=${GITLAB_DB_PASSWORD}" \
+            --env="GITLAB_SECRETS_DB_KEY_BASE=${GITLAB_SECRETS_DB_KEY_BASE}" \
             -v ${HOST_GITLAB_BACKUP_DIR}/:/home/git/backups \
             ${GITLAB_IMAGE_NAME}:${DOCKER_IMAGE_TAG} \
                 app:rake gitlab:backup:create

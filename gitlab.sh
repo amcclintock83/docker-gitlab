@@ -87,7 +87,8 @@ case ${1} in
             --env="DB_USER=${GITLAB_DB_USER}" \
             --env="DB_PASS=${GITLAB_DB_PASSWORD}" \
             --env="GITLAB_SECRETS_DB_KEY_BASE=${GITLAB_SECRETS_DB_KEY_BASE}" \
-            --env="GITLAB_SECRETS_SECRETS_KEY_BASE=${GITLAB_SECRETS_SECRETS_KEY_BASE}" \            
+            --env="GITLAB_SECRETS_SECRET_KEY_BASE=${GITLAB_SECRETS_SECRET_KEY_BASE}" \
+            --env="GITLAB_SECRETS_OTP_KEY_BASE=${GITLAB_SECRETS_OTP_KEY_BASE}" \
             ${GITLAB_IMAGE_NAME}:${DOCKER_IMAGE_TAG} \
                 app:rake gitlab:backup:restore force=yes BACKUP=${timestamp}
 #                sudo -HEu ${GITLAB_USER} bundle exec rake gitlab:backup:restore force=yes BACKUP=${timestamp} RAILS_ENV=production
